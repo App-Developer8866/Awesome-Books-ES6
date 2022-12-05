@@ -1,6 +1,7 @@
-import Book from "./Book.js";
+import Book from "./modules/Book.js";
 import UI from "./modules/UI.js";
 import Bookstore from "./modules/Bookstore.js";
+import navigationEl from "./modules/singlepage.js";
 
 const form = document.getElementById("form");
 
