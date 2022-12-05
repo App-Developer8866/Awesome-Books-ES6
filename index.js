@@ -1,14 +1,14 @@
-import Book from "./modules/Book.js";
-import UI from "./modules/UI.js";
-import Bookstore from "./modules/Bookstore.js";
-import navigationEl from "./modules/singlepage.js";
+import Book from './modules/Book.js';
+import UI from './modules/UI.js';
+import Bookstore from './modules/Bookstore.js';
+import * as singlepage from './modules/singlepage.js';
 
-const form = document.getElementById("form");
+const form = document.getElementById('form');
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', event => {
   event.preventDefault();
-  const title = document.getElementById("title").value;
-  const author = document.getElementById("author").value;
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
 
   const book = new Book(title, author);
   UI.addBook(book);
@@ -17,11 +17,11 @@ form.addEventListener("submit", (event) => {
   form.reset();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   UI.displayBooks();
 });
 
-document.getElementById("bookshelf").addEventListener("click", (event) => {
+document.getElementById('bookshelf').addEventListener('click', event => {
   UI.removeBook(event.target);
   Bookstore.removeBook(
     event.target.previousElementSibling.previousElementSibling.textContent
