@@ -57,10 +57,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome-Books <a name="about-project"></a>
+# 📖 Awesome-Books-ES6 <a name="about-project"></a>
 
-> Awesome-Books is a project created using HTML, CSS and Javascript and enables a user to add and remove a book from a list
-
+> As the name suggests, I restructured the Awesome books project code by using modules to make it neat and organised. The main aim was to get the no-how of the latest additions in ES6 syntax and structure
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
 - CSS
