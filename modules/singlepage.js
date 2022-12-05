@@ -36,4 +36,6 @@ const contactClick = contactBtn.addEventListener('click', () => {
   contactInfo.style.display = 'block';
 });
 
-export { listClick, windowLoad, linkClick, contactClick };
+export {
+  listClick, windowLoad, linkClick, contactClick,
+};
