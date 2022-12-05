@@ -1,10 +1,12 @@
-import Bookstore from "./Bookstore.js";
+import Bookstore from './Bookstore.js';
+import displayDate from './displayDate.js';
+// import displayDate from './displayDate.js';
 
 export default class UI {
   static addBook(book) {
-    const bookshelf = document.getElementById("bookshelf");
-    const ul = document.createElement("ul");
-    ul.classList.add("unorderedList");
+    const bookshelf = document.getElementById('bookshelf');
+    const ul = document.createElement('ul');
+    ul.classList.add('unorderedList');
     ul.innerHTML = `
     <p class="bookTitle"><b>${book.title}</b></p>
         <p>by${book.author}.</b></p>
@@ -14,15 +16,16 @@ export default class UI {
   }
 
   static removeBook(element) {
-    if (element.classList.contains("delete")) {
+    if (element.classList.contains('delete')) {
       element.parentElement.remove();
     }
   }
 
   static displayBooks() {
     const books = Bookstore.getBooks();
-    books.forEach((book) => {
+    books.forEach(book => {
       UI.addBook(book);
     });
+    displayDate();
   }
 }

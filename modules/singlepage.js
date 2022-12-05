@@ -1,6 +1,4 @@
 const contactInfo = document.getElementById('our-contact');
-const currentDate = new Date().toLocaleString();
-document.getElementById('current-date').innerHTML = currentDate;
 
 // display the books list when click the button "List"
 const bookList = document.getElementById('display-books');
