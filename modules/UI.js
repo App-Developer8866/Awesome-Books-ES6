@@ -1,4 +1,4 @@
-import Bookstore from "./modules/Bookstore.js";
+import Bookstore from "./Bookstore.js";
 
 export default class UI {
   static addBook(book) {
