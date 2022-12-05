@@ -1,6 +1,5 @@
 const contactInfo = document.getElementById('our-contact');
 
-// display the books list when click the button "List"
 const bookList = document.getElementById('display-books');
 const list = document.getElementById('list-link');
 const formContainer = document.getElementById('form-input');
@@ -17,7 +16,6 @@ const windowLoad = window.addEventListener('load', () => {
   contactInfo.style.display = 'none';
 });
 
-// display the Add book form  when click the button "Add new"
 const addNewBtn = document.getElementById('new-link');
 
 const linkClick = addNewBtn.addEventListener('click', () => {
@@ -25,8 +23,6 @@ const linkClick = addNewBtn.addEventListener('click', () => {
   formContainer.style.display = 'block';
   contactInfo.style.display = 'none';
 });
-
-// display the  Contact section when click the button "Contact"
 
 const contactBtn = document.getElementById('contact-link');
 
